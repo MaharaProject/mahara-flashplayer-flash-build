@@ -1,4 +1,4 @@
-<project name="Flowplayer" default="build">
+<project name="Mahara-flashplayer" default="build">
     <taskdef name="flatten" classname="org.flowplayer.ant.Flatten" classpath="lib/ant-task.jar"/>
 
     <property file="build.generated.properties"/>
@@ -70,11 +70,11 @@
     <property name="library-binary" value="flowplayer.swc"/>
     <property name="library-binary-versioned" value="flowplayer-${version-info}.swc"/>
 
-    <property name="player-binary" value="flowplayer.swf"/>
-    <property name="debug-player-binary" value="flowplayer.debug.swf"/>
+    <property name="player-binary" value="mahara-flashplayer.swf"/>
+    <property name="debug-player-binary" value="mahara-flashplayer.debug.swf"/>
     <property name="commercial-debug-player-binary" value="flowplayer.commercial.debug.swf"/>
     <property name="commercial-player-binary" value="flowplayer.commercial.swf"/>
-    <property name="player-binary-versioned" value="flowplayer-${version-info}.swf"/>
+    <property name="player-binary-versioned" value="mahara-flashplayer-${version-info}.swf"/>
     <property name="commercial-player-binary-versioned" value="flowplayer.commercial-${version-info}.swf"/>
 
     <property name="dist-name" value="flowplayer-${version-info}.zip"/>

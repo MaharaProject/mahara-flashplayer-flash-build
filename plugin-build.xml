@@ -216,7 +216,7 @@
 	</target>
 
 	<target name="example" depends="build" description="prepare the plugin example html files">
-		<prepare-example player-swf="flowplayer.swf" main-swf="${plugin-binary-versioned}"/>
+		<prepare-example player-swf="mahara-flashplayer.swf" main-swf="${plugin-binary-versioned}"/>
 	</target>
 	
 	<target name="build" description="builds all" unless="pluginproxy">
@@ -299,8 +299,8 @@
 			</zipfileset>
 			<zipfileset prefix="${basename}" dir="${build-dir}">
 				<include name="${plugin-binary-versioned}" />
-				<include name="flowplayer.swf" />
-				<include name="flowplayer.controls.swf" />
+				<include name="mahara-flashplayer.swf" />
+				<include name="mahara-flashplayer.controls.swf" />
 				<include name="example/*" />
 			</zipfileset>
 		</zip>
